@@ -16,3 +16,9 @@ services:
     build: "./backend/."
     ports:
       - "3000:3000"
+  backend2:
+    container_name: backend2
+    restart: unless-stopped
+    build: "./backend-v2/."
+    ports:
+      - "3001:3000"
